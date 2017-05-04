@@ -1,0 +1,164 @@
+/* personal_website_stylesheet.css*/
+.nav {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav li a{
+  display: inline-block;
+  padding: 10px;
+  text-decoration-line: none;
+  color: white;
+}
+
+.nav li a:link {
+  text-decoration: none;
+}
+
+.nav li a:visited {
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #ccc;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  background-color: grey;
+  font-family: SourceSansProRegular;
+  font-size: 5em;
+}
+h2 {
+  text-align: center;
+  font-family: SourceSansProRegular;
+}
+img {
+  display: block;
+  margin: auto;
+}
+p {
+  font-family: SourceSansProRegular;
+  text-align: justify;
+  line-height: 150%;
+}
+
+p.contact {
+  font-family: SourceSansProRegular;
+  text-align: left;
+  line-height: 150%;
+}
+
+div.p {
+  word-wrap: break-word;
+  width: 710px;
+  justify-content: center;
+}
+ul {
+  font-family: SourceSansProRegular;
+  text-align: left;
+}
+div {
+  width: 600px;
+  margin: auto;
+}
+
+td {
+  transition: all 1s ease-in;
+  background: #lightgrey
+}
+
+td a:hover {
+  background: #eee;
+}
+
+img.resume{
+  max-width: 75%;
+  max-height: 75%;
+}
+div.portfolio-wrapper{
+  display: inline;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+img.portfolio_photo{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.imagewrapper {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+div.imagewrapper p {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  color: #eeeeec;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 0.5s;
+  opacity: 1;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+div.imagewrapper p:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+div.imagewrapper p:hover {
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: default;
+}
+
+img.project-page{
+  max-width: 50%;
+  max-height: 50%;
+}
