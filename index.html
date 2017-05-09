@@ -1,48 +1,40 @@
-<!-- This is an html comment. The following line tells the browser this is an HTML5 document -->
 <!DOCTYPE html>
-<html>
-	<!-- The head section of an html file is sent to the browser before the body. It contains stuff that isn't actually displayed to the user. Content goes in the body section -->
-	<head>
-		<!-- The following line tells the browser where to find the styling -->
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<!-- The following line "enables" jQuery by downloading the api from the internet -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<!-- The following line tells the browser to interpret what comes next as javascript -->
-		<script>
-			// This is a javascript comment. The following line uses jQuery to know when the page is done loading.
-			$(document).ready(function() {
-				alert("The page is done loading!");
-
-				/*
-				The following line binds a function to the list elements that is triggered when any list element is clicked. The function alerts the user what is about to happen, then toggles the css class "underline".
-				The underline class is defined in style.css, and all it does is add an underline. Try creating your own class that changes the background color and font color (background-color and color respectively
-				in css), and changing this click function to toggle that class instead of the underline class.
-				*/
-				$("li").click(function() {
-					alert("Toggling the underline class");
-					$(this).toggleClass("underline");
-				});
-			});
-		</script>
-	</head>
-	<!-- The body is where the content goes -->
-	<body>
-		<!-- h1 is a type of header. I believe they go all the way down to h6 -->
-		<h1 class="underline">Tenant Placement!</h1>
-		<!-- p is for paragraph -->
-		<p id="red-background">This is a paragraph</p>
-		<p>This is a different paragraph</p>
-		<!-- ul is for unordered list (no numbers) -->
-		<ul>
-			<li>List element</li>
-			<!-- Notice how this list element has a class -->
-			<li class="underline">Another list element</li>
-			<li class="underline">Click us to toggle underline!</li>
-			<li>The last list element</li>
-		</ul>
-		<form>
-			<input type="text" name="first name" value="John">
-			<input type="submit" name="Submit">
-		</form>
-	</body>
-</html>
+<head>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
+  <link rel ="stylesheet"
+    type = "text/css"
+    href = "personal_website_stylesheet.css">
+  <style>
+    @font-face {
+      font-family: Source Sans Pro;
+      src: url(https://fonts.google.com/specimen/Source+Sans+Pro)
+    }
+  </style>
+  <body>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <h1> Winson Law </h1>
+    <h2> About Me </h2>
+    <img src="law_winson.jpg">
+    <div>
+    <p>
+      My name is Winson Law and I am an Account Manager at <a href="https://entercastle.com">
+        Castle</a>, a tech startup
+      for property management in Detroit.
+      <br>
+      <br>
+      Quick things about me:
+      <ul>
+        <li>2016 <a href="https://ventureforamerica.org">Venture for America</a> fellow</li>
+        <li>I graduated from Middlebury College in 2016 with a major in Geography
+          and a minor in French</li>
+        <li>I love cartography, design, and UI/UX</li>
+      </ul>
+    </p>
+  </div>
+  </body>
+</head>
