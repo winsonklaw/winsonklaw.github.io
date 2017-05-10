@@ -58,7 +58,7 @@ p {
   font-family: SourceSansProRegular;
   text-align: justify;
   line-height: 150%;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 
