@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <script src="leaflet/leaflet.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="mapid"></div>
+    <script>
+      var mymap = L.map('mapid').setView([42.37, -83.07], 11)
+      var CartoDB_Positron = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+  	     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+  	      subdomains: 'abcd',
+  	       maxZoom: 19
+         }).addTo(mymap);
+      var data = {"type":"FeatureCollection","features":[ {"type":"Feature","geometry":{"type":"Point","coordinates":[-83.22138,42.36356]},"properties":{"Offense Category":"BURGLARY","Longitude":"-83.22138","Latitude":"42.36356"}}, {"type":"Feature","geometry":{"type":"Point","coordinates":[-83.23978,42.36501]},"properties":{"Offense Category":"ASSAULT","Longitude":"-83.23978","Latitude":"42.36501"}}, {"type":"Feature","geometry":{"type":"Point","coordinates":[-83.04809,42.34889]},"properties":{"Offense Category":"DAMAGE TO PROPERTY","Longitude":"-83.04809","Latitude":"42.34889"}}, {"type":"Feature","geometry":{"type":"Point","coordinates":[-83.17099,42.41473]},"properties":{"Offense Category":"DAMAGE TO PROPERTY","Longitude":"-83.17099","Latitude":"42.41473"}}, {"type":"Feature","geometry":{"type":"Point","coordinates":[-83.10781,42.31566]},"properties":{"Offense Category":"ROBBERY","Longitude":"-83.10781","Latitude":"42.31566"}}, {"type":"Feature","geometry":{"type":"Point","coordinates":[-83.14626,42.3504]},"properties":{"Offense Category":"ARSON","Longitude":"-83.14626","Latitude":"42.3504"}}, ]};
+      L.geoJson(data).addTo(mymap);
+    </script>
+  </body>
+</html>
