@@ -130,7 +130,7 @@ div.imagewrapper {
 }
 
 div.imagewrapper p {
-  display: inline-block;
+  display: block;
   position: absolute;
   width: auto;
   height: auto;
